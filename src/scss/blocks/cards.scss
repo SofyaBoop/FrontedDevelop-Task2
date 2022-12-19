@@ -1,0 +1,21 @@
+.cards {
+    padding-top: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    /* gap: 15px; */
+
+    @include media-lg-max {
+      justify-content: space-between;
+   }
+
+    @include media-md-max {
+      justify-content: space-between;
+   }
+  }
+
+  .cards__card
+  {
+    margin-bottom: 15px;
+  }

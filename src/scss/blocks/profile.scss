@@ -1,0 +1,23 @@
+.profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-between;
+  }
+  
+  .profile__name {
+    color: white;
+    padding-right: 5px;
+    font-size: 15px;
+
+    @include media-md-max {
+      visibility: hidden;
+   }
+  }
+  
+  .profile__avatar {
+    background-color: #d1d5db;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+  }
