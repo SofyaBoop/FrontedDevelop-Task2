@@ -1,0 +1,39 @@
+
+.nav{
+    flex-grow: 1;
+}
+
+.nav__menu {
+    display: flex;
+
+    @include media-lg-max {
+        display: none;
+     }
+  
+}
+  
+.nav__item {
+    padding: 0px 8px;
+}
+  
+.nav__link {
+    background: #1f2937;
+    border-radius: 6px;
+    border: none;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    color: #d1d5db;
+}
+  
+.nav__link:hover {
+    background: #42537a;
+    color: #d1d5db;
+}
+  
+.nav__link--active {
+    background: #111827;
+    color: white;
+}

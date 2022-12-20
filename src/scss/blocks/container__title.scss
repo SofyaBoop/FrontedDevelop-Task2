@@ -1,0 +1,18 @@
+.container__title {
+    font-size: 40px;
+    font-style: normal;
+    text-align: center;
+    padding: 65px 0px 65px 0px;
+
+    @include media-lg-max {
+      font-size: 35px;
+      padding: 55px 0px 55px 0px;
+
+   }
+
+    @include media-md-max {
+      font-size: 30px;
+      padding: 45px 0px 45px 0px;
+
+   }
+  }

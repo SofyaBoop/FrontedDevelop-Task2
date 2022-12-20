@@ -1,0 +1,75 @@
+.card {
+    background: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    max-width: calc(100%/3 - 15px); 
+    min-height: 520px;
+    display: flex;
+    flex-direction: column;
+
+    @include media-lg-max {
+      max-width: calc(100%/2 - 15px);
+   }
+
+    @include media-md-max {
+      max-width: 100%;
+      min-height: 0%;
+   }
+  }
+
+  .card__image {
+    width: 100%;
+    height: 192px;
+    object-fit: fill;
+    border-radius: 8px 8px 0px 0px;
+  }
+  
+  .card__info {
+    padding: 24px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card__title {
+    font-weight: 500;
+    font-size: 20px;
+
+    @include media-lg-max {
+      font-size: 18px;
+   }
+
+    @include media-md-max {
+      font-size: 16px;
+   }
+  }
+  
+  .card__text {
+    font-weight: 400;
+    font-size: 16px;
+    padding-top: 12px;
+    flex-grow: 1;
+
+    @include media-lg-max {
+      font-size: 16px;
+      padding-top: 12px;
+   }
+
+    @include media-md-max {
+      font-size: 14px;
+      padding-top: 10px;
+   }
+  }
+  
+  .card__footer {
+    font-weight: 400;
+    font-size: 14px;
+
+    @include media-lg-max {
+      font-size: 14px;
+   }
+
+    @include media-md-max {
+      font-size: 12px;
+   }
+  }

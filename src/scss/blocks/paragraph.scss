@@ -1,0 +1,32 @@
+.paragraph {
+    padding-top: 26px;
+  }
+  
+  .paragraph__subtitle {
+    font-weight: 400;
+    font-size: 24px;
+    padding-bottom: 15px;
+
+    @include media-lg-max {
+      font-size: 22px;
+      padding-bottom: 12px;
+   }
+
+    @include media-md-max {
+      font-size: 20px;
+      padding-bottom: 10px;
+   }
+  }
+  
+  .paragraph__text {
+    font-weight: 400;
+    font-size: 16px;
+
+    @include media-lg-max {
+      font-size: 14px;
+   }
+
+    @include media-md-max {
+      font-size: 12px;
+   }
+  }

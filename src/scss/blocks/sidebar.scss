@@ -1,0 +1,48 @@
+  .sidebar {
+    border: 1px solid #000000;
+    background: #fcffe7;
+  }
+
+  .sidebar__title {
+    padding: 30px 30px 16px 30px;
+    font-weight: 500;
+    font-size: 20px;
+
+    @include media-lg-max {
+      padding: 25px 25px 14px 25px;
+      font-size: 21px;
+   }
+
+    @include media-md-max {
+      padding: 20px 20px 12px 20px;
+      font-size: 18px;
+   }
+  }
+  
+  .sidebar__list {
+    padding: 0px 30px 0px 30px;
+    list-style-position: inside;
+
+    @include media-lg-max {
+      padding: 0px 25px 15px 25px;
+   }
+
+    @include media-md-max {
+      padding: 0px 20px 10px 20px;
+   }
+  }
+  
+  .sidebar__item {
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+    list-style-type: disc;
+
+    @include media-lg-max {
+      font-size: 14px;
+   }
+
+    @include media-md-max {
+      font-size: 12px;
+   }
+  }
